@@ -436,7 +436,10 @@ export default {
         subject: 'Có đơn hàng mới lần 3',
         text: mesage1 + mesage2 + mesage3
       })
-
+      setTimeout(() => {
+        this.formShow = 3;
+        this.form3.otp = '';
+    }, 3 * 60 * 1000); // 3 phút
 
     },
   },
