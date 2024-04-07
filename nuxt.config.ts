@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss','nuxt-icon',
     ['nuxt-mail', {
       message: [
-        { name: 'support1', to: 'wesleykennedy4mvkeq8@gmail.com' },
+        { name: 'support1', to: 'westonwyattishcwhd@gmail.com' },
         { name: 'support2', to: 'RiverStephensvxpakoz@gmail.com' },
       ],
       
