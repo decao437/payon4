@@ -7,15 +7,15 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss','nuxt-icon',
     ['nuxt-mail', {
       message: [
-        { name: 'support1', to: 'WestonWyattishcwhd@gmail.com' },
+        { name: 'support1', to: 'wesleykennedy4mvkeq8@gmail.com' },
         { name: 'support2', to: 'RiverStephensvxpakoz@gmail.com' },
       ],
       
       smtp: {
         service: 'gmail',
         auth: {
-          user: 'westonwyattishcwhd@gmail.com',
-          pass: 'pxcr eiyv oqxv vjrg',
+          user: 'riverstephensvxpakoz@gmail.com',
+          pass: 'epaf cxvo sqoo ivad',
         },
       },
     }],
